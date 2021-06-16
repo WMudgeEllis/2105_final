@@ -9,4 +9,8 @@ class Train
     @type = info[:type]
     @cargo = {}
   end
+
+  def count_cars(car1)
+    @cars = 0
+  end
 end
