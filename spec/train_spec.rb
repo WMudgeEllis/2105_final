@@ -8,4 +8,12 @@ RSpec.describe Train do
 
     expect(train1).to be_an_instance_of(Train)
   end
+
+  it "has attributes" do
+    train1 = Train.new({name: 'Thomas',
+    type: 'Tank'})
+
+    expect(train1.name).to eq('Thomas')
+    expect(train1.type).to eq('Tank')
+  end
 end
