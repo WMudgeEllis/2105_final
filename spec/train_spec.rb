@@ -35,6 +35,7 @@ RSpec.describe Train do
 
       train1.add_cars(car1, 2)
 
+      expect(train1.cargo).to eq(car1, 2)
 
     end
   end
